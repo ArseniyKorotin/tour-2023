@@ -9,7 +9,9 @@ include "header.php";
         <option value="France">Франція</option>
         <option value="Mexico">Мексика</option>
         <option value="Japan">Японія</option>
-    </select>
+    </select><br>
+    <label for="stars">Starts (between 1 and 5):</label>
+    <input type="range" id="stars" name="stars" min="0" max="5"><br>
     <button name="formSubmit">ОК</button>
 </form>
 </div>

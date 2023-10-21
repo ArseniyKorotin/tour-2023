@@ -6,6 +6,12 @@
     <title>Tour agency!</title>
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    .fakeimg {
+        height: 200px;
+        background: #aaa;
+    }
+    </style>
 </head>
 
 <body>

@@ -2,21 +2,28 @@
 $v = "US";
 if (isset($_POST['formSubmit'])) {
     $v = $_POST['formCountry'];
-    $redir = "US.html";
+    $redir = "US.php";
+    $country = "US";
     switch ($v) {
-        case "US":$redir = "US.html";
+        case "US":
+            $redir = "US.php";
+            $country = "US";
             break;
-        case "UK":$redir = "UK.html";
+        case "UK":
+            $redir = "UK.php";
+            $country = "UK";
             break;
-        case "France":$redir = "France.html";
+        case "France":
+            $redir = "France.php";
+            $country = "France";
             break;
-        case "Mexico":$redir = "Mexico.html";
+        case "Mexico":$redir = "Mexico.php";
             break;
-        case "Japan":$redir = "Japan.html";
+        case "Japan":$redir = "Japan.php";
             break;
         default:echo ("Error!");exit();
             break;
     }
-    header("Location: $redir");
+    header("Location: $redir?country=$country");
     exit();
 }
