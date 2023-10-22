@@ -1,5 +1,5 @@
 <?php
-include_once "db";
+include_once "db.php";
 $v = "US";
 if (isset($_POST['formSubmit'])) {
     $v = $_POST['formCountry'];
