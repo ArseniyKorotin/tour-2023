@@ -2,6 +2,8 @@
 $v = "US";
 if (isset($_POST['formSubmit'])) {
     $v = $_POST['formCountry'];
+    $stars = $_POST['stars'];
+    $price = $_POST['price'];
     $redir = "US.php";
     $country = "US";
     switch ($v) {
@@ -24,6 +26,6 @@ if (isset($_POST['formSubmit'])) {
         default:echo ("Error!");exit();
             break;
     }
-    header("Location: $redir?country=$country");
+    header("Location: $redir?country=$country&stars=$stars");
     exit();
 }

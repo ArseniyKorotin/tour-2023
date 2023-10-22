@@ -3,9 +3,12 @@ include "header.php";
 ?>
 <div class="row">
     <div class="col-sm-4">
+        <h3>Your order:</h3>
         <h2><?= $_GET["country"] ?> </h2>
         <h5>Photo of <?= $_GET["country"] ?>:</h5>
-        <div class="fakeimg">Fake Image</div>
+        <p>Stars: <?= $_GET["stars"] ?></p>
+        <div class="fakeimg">Fake Image
+        </div>
         <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
         <h3 class="mt-4">Some Links</h3>
         <p>Lorem ipsum dolor sit ame.</p>
