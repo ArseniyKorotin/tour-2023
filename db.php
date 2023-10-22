@@ -2,7 +2,7 @@
 $tours = [
     [
         'name' => 'Sunny Beach',
-        'country' => "USA",
+        'country' => "US",
         'stars' => "4",
         'price' => "750",
         'transport' => "airplane",
@@ -37,7 +37,7 @@ $tours = [
     ],
     [
         'name' => 'Beautiful Walley',
-        'country' => "USA",
+        'country' => "US",
         'stars' => "1",
         'price' => "100",
         'transport' => "bus",
