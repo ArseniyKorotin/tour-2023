@@ -7,6 +7,7 @@ include "header.php";
         <h2><?= $_GET["country"] ?> </h2>
         <h5>Photo of <?= $_GET["country"] ?>:</h5>
         <p>Stars: <?= $_GET["stars"] ?></p>
+
         <div class="fakeimg">Fake Image
         </div>
         <p>Some text about me in culpa qui officia deserunt mollit anim..</p>

@@ -1,4 +1,5 @@
 <?php
+include_once "db";
 $v = "US";
 if (isset($_POST['formSubmit'])) {
     $v = $_POST['formCountry'];
@@ -25,6 +26,13 @@ if (isset($_POST['formSubmit'])) {
             break;
         default:echo ("Error!");exit();
             break;
+    }
+
+    $tour_keys = [];
+    foreach ($tours as $key => $tour) {
+        if ($tour['name'] == "USA") {
+            $tour_keys[] = $key;
+        }
     }
     header("Location: $redir?country=$country&stars=$stars");
     exit();
