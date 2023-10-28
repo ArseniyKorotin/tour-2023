@@ -64,3 +64,28 @@ $tours = [
         'transport' => "bus",
     ],
 ];
+
+$country_info = [ 'US' => '<div class="col-sm-12">
+<h2>US</h2>
+<h5>Title description, Dec 7, 2020</h5>
+<div class="fakeimg">Fake Image</div>
+<p>Some text..</p>
+<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    ullamco.</p>
+
+<h2 class="mt-5">US</h2>
+<h5>Title description, Sep 2, 2020</h5>
+<div class="fakeimg">Fake Image</div>
+<p>Some text..</p>
+<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    ullamco.</p>
+</div>',
+'UK' => "<h2>UK</h2>",
+'France' => "<h2>France</h2>
+<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    ullamco.</p>",
+'Mexico' => "<h2>Mexico</h2>",
+'Japan' => "<h2>Japan</h2>",];

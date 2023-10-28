@@ -23,7 +23,6 @@ for ($i=0; $i < count($tour_keys); $i++) {
 
 
 ?>
-
         <div class="fakeimg">Fake Image
         </div>
         <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
@@ -45,7 +44,9 @@ for ($i=0; $i < count($tour_keys); $i++) {
         </ul>
         <hr class="d-sm-none">
     </div>
-
+    <?php
+echo $country_info[$_GET["country"]];
+?>
 </div>
 <?php
 include "footer.php";
