@@ -2,52 +2,47 @@
 include "header.php";
 include_once "db.php";
 ?>
-<div class="row">
-    <div class="col-sm-12">
-        <h3>Your order:</h3>
-        <h2><?=$_GET["country"]?> </h2>
-        <h5>Photo of <?=$_GET["country"]?>:</h5>
-        <p>Stars: <?=$_GET["stars"]?></p>
-        <?php
 
-$tour_keys = [];
+<div class="col-sm-12">
+    <div class="container my-5">
+        <p class="h3">Your order:</p>
+        <p class="h4">Country: <?=$_GET["country"]?> </p>
+        <p class="h5">Stars: <?=$_GET["stars"]?></p>
+        <p class="h5">Transport: <?=$_GET["transport"]?></p>
+
+
+    <?php
+$tours_available = false;
+$c = 0;
 foreach ($tours as $key => $tour) {
-    if ($tour['country'] == $_GET["country"]) {
-        $tour_keys[] = $key;
+    if ($tour["country"] === $_GET["country"] && $_GET["price"] >= $tour["price"] && $_GET["stars"] >= $tour["stars"] && $_GET["transport"] === $tour["transport"]) {
+        $tours_available = true;
+        $c++;
+        if ($tours_available && $c == 1) {
+            print_r("<p class='h5'>Available tours for you: </p>");
+        }
+        print_r($tour["name"] . "; <br> ");
     }
 }
-print_r($tour_keys);
-for ($i=0; $i < count($tour_keys); $i++) { 
-    print_r($tours[$tour_keys[$i]]);
+
+if (!$tours_available) {
+    print_r("<p class='h5'>Sorry, but the tours you requested are not available right now. <br> But you can try other tours</p>");
 }
-
-
-?>
-        <div class="fakeimg">Fake Image
-        </div>
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-        <h3 class="mt-4">Some Links</h3>
-        <p>Lorem ipsum dolor sit ame.</p>
-        <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-        <hr class="d-sm-none">
-    </div>
-    <?php
-echo $country_info[$_GET["country"]];
 ?>
 </div>
-<?php
-include "footer.php";
+    <div class="container my-5">
+        <div class="picture my-5">
+            <img src="./images/flag_<?=$_GET["country"]?>.svg" alt="<?=$_GET["country"]?> flag">
+        </div>
+        <br>
+    </div>
+
+    <hr class="d-sm-none">
+
+    <?php
+// print_r($country_info[$_GET["country"]]);
 ?>
+</div>
+</div>
+</div>
+<?=include "footer.php"?>;
