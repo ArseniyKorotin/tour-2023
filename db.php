@@ -257,29 +257,121 @@ $tours = [
         'price' => '2500',
         'transport' => 'bike',
     ],
+    
+    // Дополнительные туры для Италии
+    [
+        'name' => 'Venice Canal Cruise',
+        'country' => 'Italy',
+        'stars' => '4',
+        'price' => '4500',
+        'transport' => 'boat',
+    ],
+    [
+        'name' => 'Roman Colosseum Expedition',
+        'country' => 'Italy',
+        'stars' => '5',
+        'price' => '7000',
+        'transport' => 'bus',
+    ],
+    [
+        'name' => 'Tuscan Vineyard Retreat',
+        'country' => 'Italy',
+        'stars' => '3',
+        'price' => '3500',
+        'transport' => 'car',
+    ],
+    [
+        'name' => 'Amalfi Coast Adventure',
+        'country' => 'Italy',
+        'stars' => '2',
+        'price' => '2500',
+        'transport' => 'walking',
+    ],
+    [
+        'name' => 'Sicilian Culinary Delights',
+        'country' => 'Italy',
+        'stars' => '5',
+        'price' => '8000',
+        'transport' => 'train',
+    ],
+
+    // Дополнительные туры для Норвегии
+    [
+        'name' => 'Fjord Cruise Experience',
+        'country' => 'Norway',
+        'stars' => '4',
+        'price' => '6000',
+        'transport' => 'boat',
+    ],
+    [
+        'name' => 'Aurora Borealis Expedition',
+        'country' => 'Norway',
+        'stars' => '5',
+        'price' => '8000',
+        'transport' => 'bus',
+    ],
+    [
+        'name' => 'Norwegian Wilderness Trek',
+        'country' => 'Norway',
+        'stars' => '3',
+        'price' => '4000',
+        'transport' => 'hiking',
+    ],
+    [
+        'name' => 'Bergen City Exploration',
+        'country' => 'Norway',
+        'stars' => '2',
+        'price' => '3000',
+        'transport' => 'train',
+    ],
+    [
+        'name' => 'Lofoten Islands Adventure',
+        'country' => 'Norway',
+        'stars' => '4',
+        'price' => '5500',
+        'transport' => 'car',
+    ],
 ];
 
-$country_info = [ 
-'US' => '<div class="col-sm-12">
-<h2>US</h2>
-<div class="fakeimg">Fake Image</div>
-<p>Some text..</p>
-<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-    ullamco.</p>
+$country_info = [
+    'US' => '
+        <div class="col-sm-12">
+            <h2>United States</h2>
+            <p>The United States of America is a nation of 50 states and occupies a large part of North America. The state of Alaska is located in the northwest of the continent, and Hawaii is situated in the Pacific Ocean. Renowned for its diverse landscapes, the USA boasts natural wonders such as the Grand Canyon, Yellowstone National Park, and the Great Smoky Mountains. Iconic cities like New York, Los Angeles, and Chicago offer vibrant cultural experiences, from Broadway shows to Hollywood entertainment.</p>
+        </div>',
+    'UK' => '
+        <div class="col-sm-12">
+            <h2>United Kingdom</h2>
+            <p>The United Kingdom, comprised of England, Scotland, Wales, and Northern Ireland, is rich in history and culture. Visitors can explore ancient castles, picturesque countryside, and bustling cities like London and Edinburgh. The UK is known for its royalty, with landmarks such as Buckingham Palace and the Tower of London capturing the fascination of tourists. The English countryside, the Scottish Highlands, and the charming villages of Wales add to the allure of this island nation.</p>
+        </div>',
+    'France' => '
+        <div class="col-sm-12">
+            <h2>France</h2>
+            <p>France, renowned for its art, fashion, and cuisine, is a captivating destination. Paris, the capital, is famous for landmarks like the Eiffel Tower, the Louvre Museum, and Notre-Dame Cathedral. The French Riviera offers glamorous beaches and Mediterranean charm, while the wine regions of Bordeaux and Burgundy appeal to enthusiasts. The diverse landscapes, from the lavender fields of Provence to the ski resorts of the Alps, make France an enticing destination.</p>
+        </div>',
+    'Mexico' => '
+        <div class="col-sm-12">
+            <h2>Mexico</h2>
+            <p>Mexico is a country of vibrant colors, rich traditions, and diverse landscapes. Ancient Mayan and Aztec ruins, such as Chichen Itza and Teotihuacan, tell stories of pre-Columbian civilizations. The beaches of Cancun and Playa del Carmen attract sun-seekers, while the colonial architecture of cities like Mexico City and Guadalajara showcases the nation&apos;s history. Mexican cuisine, with its delicious tacos, tamales, and guacamole, is a major draw for food enthusiasts.
+            </p>
+        </div>',
+    'Japan' => '
+        <div class="col-sm-12">
+            <h2>Japan</h2>
+            <p>Japan, a land of contrasts, seamlessly blends traditional and modern elements. Tokyo, a bustling metropolis, boasts futuristic technology and contemporary architecture, while Kyoto preserves ancient temples, tea houses, and gardens. Cherry blossoms in spring and colorful autumn foliage add natural beauty. Japan&apos;s cultural heritage, including sumo wrestling, tea ceremonies, and traditional festivals, provides a unique and immersive experience for visitors.<p>
+        </div>',
+    'Italy' => '
+        <div class="col-sm-12">
+            <h2>Italy</h2>
+            <p>Italy, a country known for its art, history, and culinary delights, offers a diverse range of attractions. Rome, with its ancient ruins and the Vatican City, is a treasure trove of history. Florence, the birthplace of the Renaissance, is adorned with magnificent art and architecture, while Venice&apos;s canals create a romantic atmosphere. The Amalfi Coast and Tuscany showcase Italy&apos;s picturesque landscapes, and regional cuisines, from pizza in Naples to pasta in Bologna, entice food lovers.
 
-<h2 class="mt-5">US</h2>
-<h5>Title description, Sep 2, 2020</h5>
-<div class="fakeimg">Fake Image</div>
-<p>Some text..</p>
-<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-    ullamco.</p>
-</div>',
-'UK' => "<h2>UK</h2>",
-'France' => "<h2>France</h2>
-<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-    ullamco.</p>",
-'Mexico' => "<h2>Mexico</h2>",
-'Japan' => "<h2>Japan</h2>",];
+            </p>
+        </div>',
+    'Norway' => '
+        <div class="col-sm-12">
+            <h2>Norway</h2>
+           <p>
+           Norway, with its stunning fjords, mountains, and Northern Lights, is a nature lover&apos;s paradise. Cities like Oslo and Bergen provide a blend of modernity and tradition. The scenic train rides, such as the Flam Railway, offer breathtaking views. Outdoor activities like hiking, skiing, and fjord cruises allow tourists to immerse themselves in Norway&apos;s pristine natural beauty.
+           </p>
+        </div>',
+];

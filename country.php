@@ -5,10 +5,10 @@ include_once "db.php";
 
 <div class="col-sm-12">
     <div class="container my-5">
-        <p class="h3">Your order:</p>
-        <p class="h4">Country: <?=$_GET["country"]?> </p>
-        <p class="h5">Stars: <?=$_GET["stars"]?></p>
-        <p class="h5">Transport: <?=$_GET["transport"]?></p>
+        <h1 class="display-5">Your order:</h1>
+        <h1 class="display-5">Country: <?=$_GET["country"]?> </h1>
+        <h1 class="display-5">Stars: <?=$_GET["stars"]?></h1>
+        <h1 class="display-5">Transport: <?=$_GET["transport"]?></h1>
 
 
     <?php
@@ -19,20 +19,20 @@ foreach ($tours as $key => $tour) {
         $tours_available = true;
         $c++;
         if ($tours_available && $c == 1) {
-            print_r("<p class='h5'>Available tours for you: </p>");
+            print_r("<h5 >Available tours for you: </h5>");
         }
         print_r($tour["name"] . "; <br> ");
     }
 }
 
 if (!$tours_available) {
-    print_r("<p class='h5'>Sorry, but the tours you requested are not available right now. <br> But you can try other tours</p>");
+    print_r("<h5 >Sorry, but the tours you requested are not available right now.</h5>");
 }
 ?>
 </div>
-    <div class="container my-5">
+    <div class="container">
         <div class="picture my-5">
-            <img src="./images/flag_<?=$_GET["country"]?>.svg" alt="<?=$_GET["country"]?> flag">
+            <img class="rounded" src="./images/flag_<?=$_GET["country"]?>.svg" alt="<?=$_GET["country"]?> flag">
         </div>
         <br>
     </div>
@@ -40,9 +40,9 @@ if (!$tours_available) {
     <hr class="d-sm-none">
 
     <?php
-// print_r($country_info[$_GET["country"]]);
+print_r($country_info[$_GET["country"]]);
 ?>
 </div>
 </div>
 </div>
-<?=include "footer.php"?>;
+<?php include "footer.php"?>

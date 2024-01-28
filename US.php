@@ -47,6 +47,7 @@ for ($i=0; $i < count($tour_keys); $i++) {
     </div>
 
 </div>
+
 <?php
 include "footer.php";
 ?>
